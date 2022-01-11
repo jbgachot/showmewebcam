@@ -100,6 +100,13 @@ __EOF__
 # In the future, we will not place this file here by default, instead you'll
 # have to manually create this file if you want to access the console.
 __EOF__
+		cat << __EOF__ >> "${BINARIES_DIR}/enable-usb-network"
+# This file signifies that you want to enable the network feature via
+# the USB port.
+__EOF__
+		cat << __EOF__ >> "${BINARIES_DIR}/disable-webcam"
+# This file signifies that you want to disable the camera for debug purposes
+__EOF__
 
 		;;
 	esac
